@@ -76,3 +76,15 @@ Key features:
 create a card component: Showcase Products Effectively: Presents product details in a clear and visually appealing way. Reusable Design: Can be used across multiple pages or sections of the app. Improved User Experience: Makes it easy for users to browse and interact with products. Organized Layout: Keeps the homepage clean and structured.
 display those cards on the products page: Create a Dynamic Component: Design a single card component that accepts product details as props. Use Mapping: Use array mapping to iterate over the product list and render a card for each product. Pass Data Dynamically: Pass unique product information (e.g., name, price, image) to each card. Maintain Consistency: Ensure the layout remains uniform for all products.
 Tech stack : Frontend: react
+
+# Milestone 9 : In this milestone, we will create a Createproduct page using react.
+Key features:
+We can add and remove images from the webpage.
+We can preview images.
+We can add our names and descriptions on it.
+We can specify content based on category.
+We can specify tags.
+We can specify prices range.
+We can include our preferred stock.
+We can add our e-mail.
+Tech Stack : React
