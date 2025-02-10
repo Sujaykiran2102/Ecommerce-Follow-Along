@@ -27,7 +27,7 @@ Login Page: A simple login page with fields for username and password.
 Tech Stack Used
 Frontend: React, Tailwindcss
 
-# Milestone 3: Serevr setup and error handling.
+# Milestone 3: Server setup and error handling.
 Key Features:
 Organized backend code with a clear folder structure.
 Configured a Node.js server using Express to handle APIs.
@@ -88,3 +88,13 @@ We can specify prices range.
 We can include our preferred stock.
 We can add our e-mail.
 Tech Stack : React
+
+# Milestone 10 : In this we will create a mongoose schema for products and create and endpoint to store the product details.
+Key features :
+Wrote a product schema.
+Create an end point to validate and store product details in mongodb.
+Defined the structure of product data (e.g., name, description, price, image URL) using Mongoose. -Ensure each field has proper validation (e.g., required fields, correct data types).
+Built a POST endpoint to receive product data.
+Validated and saved the product details to MongoDB.
+Ensured that only valid data is saved in the database, maintaining data integrity and preventing errors.
+Tech Stack : React - frontend - multer.js, controller-product.js, model-product.js
