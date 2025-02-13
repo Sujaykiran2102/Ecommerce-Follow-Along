@@ -98,3 +98,12 @@ Built a POST endpoint to receive product data.
 Validated and saved the product details to MongoDB.
 Ensured that only valid data is saved in the database, maintaining data integrity and preventing errors.
 Tech Stack : React - frontend - multer.js, controller-product.js, model-product.js
+
+# Milestone 11 : In this milestone, we will make our home page that will display all the products dynamic.
+Key feautures :
+We wrote an endpoint that will send all the data that was saved in mongodb using add products page earlier.
+We wrote code for how to receive data at frontend.
+We learnt how to display that data dynamically using product card created earlier.
+Summarize : Wrote an endpoint that will send all products data to frontend. In frontend we wrote an function to get all the data Display these data dynamically passing to product card component.
+Tech Stack : React - frontend - Home.jsx,Product.jsx 
+Backend - user.js, multer.js,app.js
