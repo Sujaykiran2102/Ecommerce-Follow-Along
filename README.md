@@ -107,3 +107,11 @@ We learnt how to display that data dynamically using product card created earlie
 Summarize : Wrote an endpoint that will send all products data to frontend. In frontend we wrote an function to get all the data Display these data dynamically passing to product card component.
 Tech Stack : React - frontend - Home.jsx,Product.jsx 
 Backend - user.js, multer.js,app.js
+
+# Milestone 12 : In this milestone, we will make our My products page that will display all the products That I added according to my mail.
+Key feautures : 
+We will write an endpoint that will send all the products with mail that was saved in MongoDB using add products page earlier.
+We wrote an endpoint that will send data by filtering with my mail and send data from mongodb.
+We learnt how to receive data at frontend -How to display that data dynamically using product card created earlier.
+Summary : Write an endpoint that will send all products with user mail to frontend In frontend write an function to get all the data Display these data dynamically passing to product card component.
+Tech Stack : React - frontend - pages - myProduct.jsx.
