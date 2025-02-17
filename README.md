@@ -115,3 +115,12 @@ We wrote an endpoint that will send data by filtering with my mail and send data
 We learnt how to receive data at frontend -How to display that data dynamically using product card created earlier.
 Summary : Write an endpoint that will send all products with user mail to frontend In frontend write an function to get all the data Display these data dynamically passing to product card component.
 Tech Stack : React - frontend - pages - myProduct.jsx.
+
+# Milestone 13 : In this miletone,  we will add an functionality to edit the uploaded products.
+Key feautures :
+We will add edit button and then write and backend endpoint to update the new details inside MongoDB database.
+How to write an endpoint that will update the existing data in MongoDB.
+How to auto fill the form with previous data and give option to edit.
+Summary : Write an endpoint that will receive new data and update the existing data inside MondoDB. In frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save.
+Tech Stack : React - frontend - component - MyProduct.jsx
+Backend - controller - product.js

@@ -7,7 +7,7 @@ export default function Home() {
   const [error, setError] = useState(null); // For error handling
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/v2/product/get-products")
+    fetch("http://localhost:8000/api/v2/product/get-products")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
@@ -19,7 +19,7 @@ export default function Home() {
         setLoading(false);
       })
       .catch((err) => {
-        console.error("❌ Error fetching products:", err);
+        console.log("❌ Error fetching products:", err);
         setError(err.message);
         setLoading(false);
       });
