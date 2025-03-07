@@ -167,11 +167,26 @@ And also, we will create an backend endpoint to fetch all the products inside ca
 Summary : We created an endpoint to get all types of products details in our page.
 Tech Stack: Backend - product.js
 
-# Milestone 19 : we will create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart.
+# Milestone 19 : In this milestone, we will create an frontend page UI for cart and write an endpoint to increase and decrease the quantity of product inside cart.
 Key feautures :
-Create an cart page that display the products inside cart using endpoint we build in milestone 18.
-For each product add an option to increase and decrease quantity using + and - buttons.
-Write an endpoint to increase and decrease the quantityCreate an cart page that display the products inside cart using endpoint we build in milestone 18.
-For each product add an option to increase and decrease quantity using (+) and (-) buttons.
-Write an endpoint to increase and decrease the quantity.
+Created an cart page that display the products inside cart using endpoint we build in milestone 18.
+For each product added an option to increase and decrease quantity using + and - buttons.
+Wrote an endpoint to increase and decrease the quantityCreate an cart page that display the products inside cart using endpoint we build in 
+For each product added an option to increase and decrease quantity using (+) and (-) buttons.
+Wrote an endpoint to increase and decrease the quantity.
 Summary : created an backend end point to increment and decrement product in cart.
+Tech Stack : Backend - controller - product.js,
+Frontend - src - components - Product.jsx,
+pages - Cart.jsx.
+
+# Milestone 20 : In this milestone, we will profile page frontend and write an endpoint to receive user data and display.
+Key feautures :
+Created an Backend endpoint that will sent user data
+created frontend profile page
+display profile photo, name and email in one section
+In another section display address and add an button called "Add address"
+If there are no address display "No address found".
+Summary : Created an profile page with the user details like name ,address ,etc..,
+Tech Stack : Backend - controller - user.js,
+Frontend - components - AddressCard.jsx, NavBar.jsx,
+pages - Profile.jsx
