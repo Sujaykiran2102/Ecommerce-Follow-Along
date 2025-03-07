@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import Nav from "../components/nav";
+import NavBar from "../components/NavBar";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
 
@@ -12,7 +12,7 @@ export default function ProductDetails() {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 	const [quantity, setQuantity] = useState(1);
-	const email = "gowrishvarma@gmail.com"
+	const email = "rssujaykiran@gmail.com"
 
 	useEffect(() => {
 		const fetchProduct = async () => {
@@ -96,7 +96,7 @@ export default function ProductDetails() {
 
 	return (
 		<>
-			<Nav />
+			<NavBar />
 			<div className="container mx-auto p-6">
 				<div className="bg-white drop-shadow-lg rounded-lg overflow-hidden">
 					<div className="md:flex select-none">
