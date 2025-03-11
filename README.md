@@ -198,3 +198,10 @@ Create an state that will store input address
 When we click on add address in profile it should navigate to this form page.
 Summary : Created an addAddress button in profile page to enter user address.
 Tech Stack : Frontend - pages - createAddress.jsx, Profile.jsx
+
+# Milestone 22 : In this milestone, we will create an backend endpoint that will save the address inside user profile in database.
+Key feautures :
+Created an endpoint that will receive the address from address form in frontend
+Add the address to the address array inside user collection.
+Summary : Created an endpoint(post) for createAddress.jsx .
+Tech Stack : Backend - controller - user.js
