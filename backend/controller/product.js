@@ -4,8 +4,8 @@ const User = require('../model/user');
 const router = express.Router();
 const { pupload } = require("../multer");
 const path = require('path');
+const mongoose = require('mongoose');
 
-// Validation function
 const validateProductData = (data) => {
     const errors = [];
 
@@ -46,7 +46,6 @@ router.post('/create-product', pupload.array('images', 10), async (req, res) => 
             return res.status(400).json({ error: 'Email does not exist in the users database' });
         }
 
-        // Create and save the new product
         const newProduct = new Product({
             name,
             description,
@@ -57,7 +56,6 @@ router.post('/create-product', pupload.array('images', 10), async (req, res) => 
             email,
             images,
         });
-
         await newProduct.save();
 
         res.status(201).json({
@@ -70,14 +68,12 @@ router.post('/create-product', pupload.array('images', 10), async (req, res) => 
     }
 });
 
-// Route: Get all products
 router.get('/get-products', async (req, res) => {
     try {
         const products = await Product.find();
         const productsWithFullImageUrl = products.map(product => {
             if (product.images && product.images.length > 0) {
                 product.images = product.images.map(imagePath => {
-                    // Image URLs are already prefixed with /products
                     return imagePath;
                 });
             }
@@ -90,8 +86,6 @@ router.get('/get-products', async (req, res) => {
     }
 });
 
-
-// Get my-products
 router.get('/my-products', async (req, res) => {
     const { email } = req.query;
     try {
@@ -114,6 +108,7 @@ router.get('/my-products', async (req, res) => {
 
 
 router.get('/product/:id', async (req, res) => {
+    console.log("Fetching product");
     const { id } = req.params;
     try {
         const product = await Product.findById(id);
@@ -127,11 +122,9 @@ router.get('/product/:id', async (req, res) => {
     }
 });
 
-
 router.put('/update-product/:id', pupload.array('images', 10), async (req, res) => {
     const { id } = req.params;
     const { name, description, category, tags, price, stock, email } = req.body;
-
 
     try {
         const existingProduct = await Product.findById(id);
@@ -139,14 +132,12 @@ router.put('/update-product/:id', pupload.array('images', 10), async (req, res) 
             return res.status(404).json({ error: 'Product not found.' });
         }
 
-
         let updatedImages = existingProduct.images;
         if (req.files && req.files.length > 0) {
             updatedImages = req.files.map((file) => {
                 return `/products/${path.basename(file.path)}`;
             });
         }
-
 
         const validationErrors = validateProductData({
             name,
@@ -157,11 +148,9 @@ router.put('/update-product/:id', pupload.array('images', 10), async (req, res) 
             email,
         });
 
-
         if (validationErrors.length > 0) {
             return res.status(400).json({ errors: validationErrors });
         }
-
 
         existingProduct.name = name;
         existingProduct.description = description;
@@ -172,9 +161,7 @@ router.put('/update-product/:id', pupload.array('images', 10), async (req, res) 
         existingProduct.email = email;
         existingProduct.images = updatedImages;
 
-
         await existingProduct.save();
-
 
         res.status(200).json({
             message: '✅ Product updated successfully',
@@ -182,7 +169,7 @@ router.put('/update-product/:id', pupload.array('images', 10), async (req, res) 
         });
     } catch (err) {
         console.error('Server error:', err);
-        res.status(500).json({ error: 'Server error. Could not update product.'});
+        res.status(500).json({ error: 'Server error. Could not update product.' });
     }
 });
 
@@ -202,6 +189,7 @@ router.delete('/delete-product/:id', async (req, res) => {
         res.status(500).json({ error: 'Server error. Could not delete product.' });
     }
 });
+
 
 router.post('/cart', async (req, res) => {
     try {
@@ -250,9 +238,7 @@ router.post('/cart', async (req, res) => {
         console.error(error);
         res.status(500).json({ message: 'Server Error' });
     }
-});
-
-// GET cart details endpoint
+})
 router.get('/cartproducts', async (req, res) => {
     try {
         const { email } = req.query;
@@ -313,6 +299,5 @@ router.put('/cartproduct/quantity', async (req, res) => {
     }
 });
 
+
 module.exports = router;
-
-
