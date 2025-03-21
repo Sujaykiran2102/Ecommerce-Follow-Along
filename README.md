@@ -255,3 +255,13 @@ We will add my-orders page in navbar for better navigation.
 Summary : Created an frontend page that will display all the user orders.
 Tech Stack : Backend - controller - order.js
 Frontend - pages - MyOrdersPage.jsx
+
+# Milestone 28 : In this milestone, we will add cancel button in my-orders and create an backend endpoint for cancel order.
+Key feautures :
+In my-orders page for every order add cancel order button
+If the order is already canceled this button should not be displayed
+You need to create an endpoint that will receive the order-id
+Get the order using this id and mark the status canceled and save
+Summary : The use will be able to cancel the placed orders.
+Tech Stack : Backend - controller - order.js
+Frontend - pages -  MyOrdersPage.jsx
