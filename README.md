@@ -244,3 +244,14 @@ Send all the users orders in the response.
 Summary : Updated an endpoint for orders.
 Tech Stack : Backend - controller - order.js
 Frontend - pages - OrderConfirmation.jsx
+
+# Milestone 27 : In this milestone, we will create an frontend page for myorders.
+Key feautures :
+You need to create an my-orders page
+You will send an get request to my-orders endpoint that we created in previous milestone.
+We will send user mail in to endpoint to get all the user orders
+Display all the user orders
+We will add my-orders page in navbar for better navigation.
+Summary : Created an frontend page that will display all the user orders.
+Tech Stack : Backend - controller - order.js
+Frontend - pages - MyOrdersPage.jsx
