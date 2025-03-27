@@ -265,3 +265,6 @@ Get the order using this id and mark the status canceled and save
 Summary : The use will be able to cancel the placed orders.
 Tech Stack : Backend - controller - order.js
 Frontend - pages -  MyOrdersPage.jsx
+
+# Milestone 29 : In this milestone, we will learn how to add online payment gateway to our application using Paypal api.
+Key feautures :
