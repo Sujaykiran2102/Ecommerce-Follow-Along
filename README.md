@@ -268,3 +268,13 @@ Frontend - pages -  MyOrdersPage.jsx
 
 # Milestone 29 : In this milestone, we will learn how to add online payment gateway to our application using Paypal api.
 Key feautures :
+Please create an PayPal account first PayPal developer dashboard
+Once you login you can see an option for an sandbox accounts.
+Copy the UserID of that account and save it.
+In this sandbox accounts you can find your client id copy and save it.
+In your order conformation page you need two options for payment one is COD and another is online payment.
+Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
+In next milestone we will write an code to display and use those PayPal online Payments buttons.
+Summary : Learnt how to use PayPal API.
+Learnt how to Integrate online payments.
+Tech Stack : Frontend - OrderConfirmationPage.jsx -React
