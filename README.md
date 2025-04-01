@@ -271,10 +271,17 @@ Key feautures :
 Please create an PayPal account first PayPal developer dashboard
 Once you login you can see an option for an sandbox accounts.
 Copy the UserID of that account and save it.
-In this sandbox accounts you can find your client id copy and save it.
-In your order conformation page you need two options for payment one is COD and another is online payment.
-Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
-In next milestone we will write an code to display and use those PayPal online Payments buttons.
+In this sandbox accounts I can find my client id copy and save it.
+In my order conformation page you need two options for payment one is COD and another is online payment.
+Created radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
+In next milestone we wrote an code to display and use those PayPal online Payments buttons.
 Summary : Learnt how to use PayPal API.
 Learnt how to Integrate online payments.
+Tech Stack : Frontend - OrderConfirmationPage.jsx -React
+
+# Milestone 30 : In this milestone, we will learn how to add online payment gateway to our application using PayPal API. This is an continuous milestone of milestone 29 where you created PayPal account and get the userid.
+Key feautures :
+After creating PayPal account and getting the UserID inside sandbox account.
+Implement online payment using PayPal API using the client key you created earlier.
+Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
 Tech Stack : Frontend - OrderConfirmationPage.jsx -React
